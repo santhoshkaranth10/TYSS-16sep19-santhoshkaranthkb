@@ -1,0 +1,5 @@
+package com.testyantra.phoneproject.dto;
+
+public class ContactBean {
+
+}

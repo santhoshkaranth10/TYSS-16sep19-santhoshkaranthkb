@@ -1,0 +1,17 @@
+package com.testyantra.phoneproject.dao;
+
+import java.util.List;
+
+import com.testyantra.phoneproject.dto.ContactBean;
+
+public class ContactDAO {
+
+	public interface ContactDAO {
+
+		public List<ContactBean> getAllContactData();
+		public ContactBean searchEmployeeData(int id);
+		public int insertContactData(ContactBean bean);
+		public int updateContactData(ContactBean bean);
+		public int deleteContactData(int id);
+	}
+}
