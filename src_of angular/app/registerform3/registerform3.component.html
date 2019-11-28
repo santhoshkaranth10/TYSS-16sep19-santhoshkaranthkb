@@ -1,0 +1,30 @@
+<form action="" class="col-md-4 offset-4 mt-5 card card-body" #form="ngForm" (ngSubmit)=loginData(form)>
+    <h1 class="text-center bg-dark text-white">form 3</h1>
+    <div class="form-group">
+        <input type="text" name="userName" id="userName" class="form-control" placeholder="enter user name" #user name="ngModel" ngModel required>
+    </div>
+    <div class="form-group">
+            <input type="text" name="userPage" id="userPage" class="form-control" placeholder="enter user page" #user page="ngModel" ngModel required>
+        </div>
+            <div class="form-group">
+                    <h3>gender</h3>
+                    <label class="radio-inline"><input type="radio" name="optradio" checked>male</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">female</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">other</label>
+                    </div>
+                    <div class="form-group">
+                            <input type="text" name="userEmail" id="userEmail" class="form-control" placeholder="enter user email" #user email="ngModel" ngModel required>
+                        </div>
+                        <div class="form-group">
+                                <input type="number" name="userContactNumber" id="userContactNumber" class="form-control" placeholder="enter user contact number" #user contact number="ngModel" ngModel required>
+                            </div>
+                            <div class="form-group">
+                                    <input type="password" name="password" id="password" class="form-control" placeholder="enter password" #password="ngModel" ngModel required>
+                                </div>
+                                    <div class="form-group">
+                                            <input type="password" name="retypePassword" id="retypePassword" class="form-control" placeholder="retype password" #retyrpe password="ngModel" ngModel required>
+                                        </div>
+                                        <div class="form-group">
+                                        <button type="submit" class="btn btn-outline-success float-right">Add User</button>
+                                        </div>
+</form>

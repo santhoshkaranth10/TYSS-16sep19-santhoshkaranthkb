@@ -1,0 +1,33 @@
+<form action="" class="col-md-4 offset-4 mb-5 mt-4 card card-body" #form="ngForm" (ngSubmit)="loginData(form)">
+<h1 class="text-center bg-dark text-white">form2</h1>
+    <div class="form-group">
+        <input type="text" name="CandidateName" id="CandidateName" class="form-control" #cName = "ngModel" ngModel required placeholder="enter candidate name">
+        <div *ngIf="candidateName.touched && candidateName.invalid">
+                <p class="alert alert-danger" *ngIf="candidateName.errors.required">this field is required</p>
+              </div>
+             </div>
+             <div class="form-group">
+                    <input type="number" name="years of experience" id="years of experience" class="form-control"  placeholder="enter years of experience" #years of experience = "ngModel" ngModel>
+            </div>
+            <div class="form-group">
+            <h3>skills</h3>
+            <label class="radio-inline"><input type="radio" name="optradio" checked>java</label>
+            <label class="radio-inline"><input type="radio" name="optradio">angular</label>
+            <label class="radio-inline"><input type="radio" name="optradio">sql</label>
+            <label class="radio-inline"><input type="radio" name="optradio">springs</label>
+            </div>
+             
+            <div class="form-group">
+              <input type="number" name="CCTC" id="CCTC" class="form-control"  placeholder="enter CCTC" #CCTC = "ngModel" ngModel>
+            </div>
+            <div class="form-group">
+             <input type="number" name="ECTC" id="ECTC" class="form-control"  placeholder="enter ECTC" #ECTC = "ngModel" ngModel>
+             </div>
+             <div class="form-group">
+                <input type="text" name="ready to relocate" id="ready to relocate" class="form-control"  placeholder="" #ready to relocate = "ngModel" ngModel>
+                 </div>
+                 <div>
+                 <button type="submit" class="btn btn-outline-success float-right">schedule interview</button>
+                 </div> 
+
+</form>

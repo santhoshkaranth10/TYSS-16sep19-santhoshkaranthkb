@@ -1,0 +1,14 @@
+<div class="com-md-8 offset-2 mt-4 card card-body">
+    <form action="" #form="ngForm" (ngSubmit)="formData(form)">
+      <h1 class="text-center" style="background-color: #eeee">Comment Section</h1> 
+      <div class="form-group">
+        <input type="text" name="title" id="title" class="form-control" placeholder="enter title" #title="ngModel" ngModel>
+      </div> 
+      <div class="form-group">
+          <textarea name="desc" id="desc" cols="100" rows="5" class="form-group" placeholder="enter description" #desc = "ngModel" ngModel></textarea>
+      </div>
+      <div class="form-group">
+          <button type="submit" class="btn btn-outline-primary float-right">post comment</button>
+      </div>
+    </form>
+</div>
