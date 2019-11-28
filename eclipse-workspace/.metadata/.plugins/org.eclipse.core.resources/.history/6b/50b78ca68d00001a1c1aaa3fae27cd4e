@@ -1,0 +1,5 @@
+package com.testyantra.jdbcapp;
+
+public class ExecuteDeleteQuery {
+
+}

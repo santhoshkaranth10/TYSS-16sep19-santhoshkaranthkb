@@ -1,0 +1,10 @@
+package com.testyantra.springcore.config;
+
+import com.testyantra.springcore.di.Hello;
+
+public class ConfigurationClass {
+
+	public Hello getHello() {
+		return new Hello();
+	}
+}

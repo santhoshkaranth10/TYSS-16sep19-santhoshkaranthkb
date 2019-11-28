@@ -1,0 +1,8 @@
+package com.testyantra.jpawithhibernate.manytomany;
+
+public class Student {
+
+	Private int sid;
+	private String sname;
+	
+}

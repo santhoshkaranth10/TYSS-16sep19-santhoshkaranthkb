@@ -1,0 +1,28 @@
+package com.testyantra.springcore.di;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+public class Hello {
+
+	public Hello() {
+		System.out.println("object created for hello class");
+	}
+	private String msg;
+
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+	@PostConstruct
+	public void init() {
+		System.out.println("init method executing from hello");
+	}
+	@PreDestroy//without closing the object it wont destroy so destroy it first
+	public void destroy() {
+		System.out.println("destroy method executing from java");
+	}
+}

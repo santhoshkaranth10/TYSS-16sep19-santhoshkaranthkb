@@ -1,0 +1,6 @@
+package com.testyantra.jpawithhibernate.jpql;
+
+public class DynamicPSQL {
+
+	
+}

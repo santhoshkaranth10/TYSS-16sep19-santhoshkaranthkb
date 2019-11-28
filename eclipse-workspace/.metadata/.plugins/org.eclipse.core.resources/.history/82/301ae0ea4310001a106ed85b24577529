@@ -1,0 +1,20 @@
+package com.testyantra.springcore.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.testyantra.springcore.di.Hello;
+
+@Configuration
+public class ConfigurationClass {
+
+	@Bean(name="hello")
+	public Hello getHello() {
+		Hello hello =new Hello();
+		hello.setMsg("i love python");
+		return hello;
+	}
+//	public Hello getHello() {
+//		return new Hello();
+//	}
+}

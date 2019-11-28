@@ -1,0 +1,5 @@
+package com.testyantra.jpawithhibernate.onetoone;
+
+public class Person {
+
+}

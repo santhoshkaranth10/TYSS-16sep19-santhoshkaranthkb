@@ -1,0 +1,17 @@
+package com.testyantra.jpawithhibernate.manytoone;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
+import lombok.Data;
+@Entity
+@Data
+public class PencilBox {
+
+	
+	@Column
+	private int bid;
+	@Column
+	private String bname;
+	
+}

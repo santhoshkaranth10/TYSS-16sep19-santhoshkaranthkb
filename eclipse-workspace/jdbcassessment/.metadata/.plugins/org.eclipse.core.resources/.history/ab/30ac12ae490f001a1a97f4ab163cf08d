@@ -1,0 +1,5 @@
+package com.testyantra.phoneproject.dao;
+
+public class ContactDAO {
+
+}

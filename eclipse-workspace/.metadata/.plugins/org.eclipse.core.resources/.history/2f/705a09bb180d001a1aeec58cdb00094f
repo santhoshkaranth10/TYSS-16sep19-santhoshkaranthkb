@@ -1,0 +1,8 @@
+package com.testyantra.jpawithhibernate;
+
+public class TestManyToMany {
+
+	public static void main(String[] args) {
+		
+	}
+}

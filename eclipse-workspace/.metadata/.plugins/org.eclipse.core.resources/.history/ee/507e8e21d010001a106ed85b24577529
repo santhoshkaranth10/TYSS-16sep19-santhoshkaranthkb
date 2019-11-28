@@ -1,0 +1,27 @@
+package com.testyantra.springcore.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+
+import com.testyantra.springcore.di.Cat;
+import com.testyantra.springcore.di.Dog;
+import com.testyantra.springcore.di.Hello;
+import com.testyantra.springcore.di.Pet;
+
+@Configuration
+public class HelloConfigurationClass {
+
+	@Bean(name="hello")
+	//@Scope("prototype")//instead of writing like below code we can also write in this way
+	//if we don't erase "scope" here destroy method wont execute
+	public Hello getHello() {
+		Hello hello =new Hello();
+		hello.setMsg("i love python");
+		return hello;
+	}
+//	public Hello getHello() {
+//		return new Hello();
+//	}
+		}
+

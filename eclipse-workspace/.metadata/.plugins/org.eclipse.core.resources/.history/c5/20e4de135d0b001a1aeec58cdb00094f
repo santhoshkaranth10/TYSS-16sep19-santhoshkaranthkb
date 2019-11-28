@@ -1,0 +1,10 @@
+package com.testyantra.jpawithhibernate.dto;
+
+public class Product {
+
+	
+	private int id;
+	private String pname;
+	private int quantity;
+	
+}

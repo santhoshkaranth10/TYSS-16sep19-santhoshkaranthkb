@@ -1,0 +1,14 @@
+package com.testyantra.jpawithhibernate.jpql;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class ExecuteJPQL {
+
+	public static void main(String[] args) {
+		
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("TestPersistence");
+		EntityManager entityManager = entityManagerFactory.createEntityManager();
+	}
+}

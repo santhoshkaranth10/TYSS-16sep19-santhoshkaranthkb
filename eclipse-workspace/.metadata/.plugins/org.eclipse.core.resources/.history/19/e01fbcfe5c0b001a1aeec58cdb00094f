@@ -1,0 +1,5 @@
+package com.testyantra.jpawithhibernate.dto;
+
+public class Product {
+
+}

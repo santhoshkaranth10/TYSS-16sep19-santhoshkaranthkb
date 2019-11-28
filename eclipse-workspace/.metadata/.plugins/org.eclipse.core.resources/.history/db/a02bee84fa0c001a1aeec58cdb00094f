@@ -1,0 +1,33 @@
+package com.testyantra.jpawithhibernate.manytoone;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+public class TestManyToOne {
+
+	public static void main(String[] args) {
+		PencilBox pebox = new PencilBox();
+		pebox.setBid(1);
+		pebox.setBname("apsara");
+		
+		Pencil p1 = new Pencil();
+		p1.setPid(11);
+		p1.setColor(color);
+		
+		
+		
+		EntityManager entityManager = null;
+		EntityTransaction entityTransaction = null;
+		try {
+			EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("TestPersistence");
+			entityManager = entityManagerFactory.createEntityManager();
+			entityTransaction = entityManager.getTransaction();
+			entityTransaction.begin();
+		}catch(Exception e) {
+			e.printStackTrace();
+			
+		}
+	}
+}

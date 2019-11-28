@@ -1,0 +1,5 @@
+package com.testyantra.jpawithhibernate.manytomany;
+
+public class Course {
+
+}

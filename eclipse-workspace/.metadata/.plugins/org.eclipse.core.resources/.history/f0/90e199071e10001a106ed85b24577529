@@ -1,0 +1,9 @@
+package com.testyantra.springcore.di;
+
+public class Pet {
+
+	private String name;
+	private Animal animal;
+	
+	
+}

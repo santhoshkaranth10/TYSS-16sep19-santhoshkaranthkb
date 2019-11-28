@@ -1,0 +1,26 @@
+package com.testyantra.springcore;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.testyantra.springcore.di.Book;
+
+public class BookApp {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("book.xml");
+		Book book = context.getBean(Book.class);
+		System.out.println(book.getAuthor());
+		
+		ApplicationContext context1 = new ClassPathXmlApplicationContext("book.xml");
+		Book book2 = context1.getBean(Book.class);
+		System.out.println(book2.getName());
+		
+		ApplicationContext context2 = new ClassPathXmlApplicationContext("book.xml");
+		Book book3 = context2.getBean(Book.class);
+		System.out.println(book3.getPrice());
+		
+		
+	}
+}

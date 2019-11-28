@@ -1,0 +1,19 @@
+package com.testyantra.springcore.config;
+
+import org.springframework.context.annotation.Configuration;
+
+import com.testyantra.springcore.di.Author;
+
+@Configuration
+public class ConfigurrationClass1 {
+
+	public static void main(String[] args) {
+		
+	
+		public Author getAuthor() {
+		Author author = new Author();
+		author.setName("santhu");
+		return author;
+		
+	}
+}

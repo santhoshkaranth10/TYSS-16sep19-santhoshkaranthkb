@@ -1,0 +1,30 @@
+package com.testyantra.empwebapp.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.testyantra.empwebapp.dto.EmployeeInfo;
+
+public class HomeServlet extends HttpServlet {
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		HttpSession session = req.getSession(false);
+		if(session!=null) {
+			EmployeeInfo info = (EmployeeInfo)session.getAttribute("info");//here we are down-casting the employee info object to get the name
+		PrintWriter out = resp.getWriter();
+		out.println("<h1>welcome");
+		out.println("<h1>");
+		out.println("<a href='./search.html'>Search</a>");
+		out.println("<a href='./changepassword.html'>Change Password</a>");
+		out.println("<a href='#'>Logout</a>");
+		
+		}
+	}
+}

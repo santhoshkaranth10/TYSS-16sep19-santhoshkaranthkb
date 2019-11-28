@@ -1,0 +1,7 @@
+package com.testyantra.springcore.di;
+
+public class Author {
+
+	private String name;
+	private String penName;
+}

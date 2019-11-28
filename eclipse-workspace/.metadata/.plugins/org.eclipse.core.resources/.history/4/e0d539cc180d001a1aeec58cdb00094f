@@ -1,0 +1,23 @@
+package com.testyantra.jpawithhibernate;
+
+import com.testyantra.jpawithhibernate.manytomany.Course;
+
+public class TestManyToMany {
+
+	public static void main(String[] args) {
+		
+		Course c1 = new Course();
+		c1.setCid(10);
+		c1.setCname("java");
+		
+		Course c2 = new Course();
+		c2.setCid(11);
+		c2.setCname("sql");
+		
+		Course c3 = new Course();
+		c3.setCid(10);
+		c3.setCname("hibernate");
+		
+		
+	}
+}

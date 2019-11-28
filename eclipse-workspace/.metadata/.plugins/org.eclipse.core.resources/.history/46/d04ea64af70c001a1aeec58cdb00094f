@@ -1,0 +1,8 @@
+package com.testyantra.jpawithhibernate.manytoone;
+
+public class Pencil {
+
+	
+	private int pid;
+	private String color;
+}

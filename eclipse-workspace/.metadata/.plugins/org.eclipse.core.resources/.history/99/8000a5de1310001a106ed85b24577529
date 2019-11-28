@@ -1,0 +1,6 @@
+package com.testyantra.springcore.di;
+
+public class Hello {
+
+	private String msg;
+}

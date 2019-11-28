@@ -1,0 +1,9 @@
+package com.testyantra.didemo.dao.impl;
+
+public class A implements I {
+	
+@Override
+public void m1() {
+	
+}
+}
