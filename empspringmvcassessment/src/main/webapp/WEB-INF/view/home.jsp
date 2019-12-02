@@ -32,7 +32,7 @@
 
 	<%
 		/*here we are getting the bean which contains id and the bean is present in  requestAttribute */
-		Product product = (Product) request.getAttribute("name");
+		Product product = (Product) request.getAttribute("bean");
 	%>
 	
 	<%
@@ -50,13 +50,14 @@
     <td><%=product.getPid()%></td>
     <td><%=product.getPname()%></td>
     <td><%=product.getPrice()%></td>
+    <td><a href="./order">order now</a>
     
 </tr>
 </table>
     <% 
        } 
     %>
-    <h2>${msg }</h2>
+    <h2>${msg}</h2>
     </body>
     </html>
     
