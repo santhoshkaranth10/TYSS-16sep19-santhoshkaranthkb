@@ -1,0 +1,30 @@
+<form #form="ngForm" (ngSubmit)="dosearch(form)">
+<input type="text" name="search" id="search" [(ngModel)]="searchValue" class="form-control col-md-6 offset-3 mt-4" placeHolder="enter here...">
+
+<h3 style="text-align: center;">product by name</h3>
+<table class="table table-bordered table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>Productid</th>
+            <th>product name</th>
+            <th>product category</th>
+            <th>product company</th>
+            <th>product Quantity</th>
+            <th>product price</th>
+                         
+        </tr>
+    </thead>
+  
+    <tbody>
+        <tr *ngFor='let product of products'>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.company}}</td>
+            <td>{{product.quantity}}</td>
+            <td>{{product.price}}</td>
+            <td><button class="btn btn-success" type="button" 
+                (click)="selectUser(request)"></button></td>
+            </tr>
+    </tbody>
+</table>
+</div>
